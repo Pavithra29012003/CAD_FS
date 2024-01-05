@@ -1,36 +1,41 @@
 img{
-	height:75px;
-	width:100<px;
+	height:2ch;
+	width:50px;
 
 }
-title href{
+title{
 	width:500px;
 	height:500px;
 }
+
 .HomeHeading{
 	display: flex;
 	gap: 20px;
 	justify-content: center;
 	align-items: center;
 	background-color:black;
-	place-items: center;
+	place-items:center;
 }
+
 h1{
 	color:white;
 	font-size: 25px;
 
 }
+
 .HomeHeadingDescrp{
 	text-align:center;
 
 }
+
 ul{
-	display:block;
-	list-style: none;
-	gap: 20px;
+	display:bliock;
+	list-style:none;
+	gap:20px;
 	background-color:black;
-	padding: 30px 20px;
+	padding:30px 20px;
 }
+
 li a{text-decoration: none;
 	color:white;
 	padding: 20px 20px;
