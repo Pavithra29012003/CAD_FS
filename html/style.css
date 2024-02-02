@@ -3,6 +3,7 @@ img{
 	width:50px;
 
 }
+
 title{
 	width:500px;
 	height:500px;
@@ -66,7 +67,7 @@ marquee{
 	background-color:lightyellow;
 }
 
-	
+
 
 
 .bouquet{
@@ -156,7 +157,7 @@ input[type=submit]:hover {
 	gap:40px;
 }
 .container img{
-	width: 400px;
+	width: 500px;
 	height:400px;
 	
 }
@@ -219,6 +220,42 @@ button:hover {
   background-color: #f44336;
 }
 
+
+
+
+
+.swiper
+  {
+  width: 1000px;
+  height: 300px;
+}
+
+.swipwer .swipwer-button-prev, .swiper .swiper-button-next{
+  color:white;
+}
+
+.swiper-pargination-active{
+  color:pink;
+  opacity:1;
+}
+
+.swiper-pargination-bullet-active{
+  color:green;
+  width: 6srem;
+  height:.1rem;
+  border-radius:.8rem;
+}
+	
+
+.swiper {
+  width: 1300px;
+  height: 300px;
+}
+.swiper img{
+  width: 1300px;
+  height: 300px;
+}
+
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
@@ -231,6 +268,7 @@ img.avatar {
 
 .container {
   padding: 16px;
+  width: 100%;
 }
 
 span.psw {
@@ -248,3 +286,5 @@ span.psw {
      width: 100%;
   }
 }
+
+
