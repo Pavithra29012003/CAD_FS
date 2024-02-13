@@ -13,6 +13,7 @@
     text-transform:capitalize;
     transition: .2s linear;
 }
+
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -20,6 +21,7 @@ html{
     overflow-x: hidden;
 
 }
+
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -62,7 +64,7 @@ header .icons a:hover{
 
 }
 header #toggler{
-    display: none;
+    display: none; 
 
 }
 header .fa-bars{
@@ -192,7 +194,7 @@ section{
 
 .banner-img:hover img{
 	transform: scale(1.1);
-}
+} 
 
 
 /* ABOUTUS PAGE:START */
@@ -271,6 +273,11 @@ section{
 
 /* PRODUCTS:PAGE */
 
+.products-box{
+  display:relative;
+}
+
+
 .products .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -282,8 +289,9 @@ section{
     flex: 1 1 30rem;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
     border-radius: .5rem;
-    border: .1rem solid rgba(0, 0, 0, 0.1);
+    border: .1rem solid white;
     position: relative;
+    
     
 }
 
@@ -293,70 +301,53 @@ section{
 
 
 
- 
-@media (max_width:991px) {
-    html{
-    font-size: 55%;
 
+ 
+
+@media(max-width:991px){
+  html{
+      font-size: 55%;
   }
   header{
-    padding:2rem;
+      padding:2rem;
   }
   section{
-    padding: 2rem;
+    padding:2rem;
+}
+
+}
+
+
+@media(max-width:768px){
+  header .fa-bars{
+      display:block;
   }
-  .home{
-    background-position: left;
+  header .navbar{
+      position: absolute;
+      top:100%; left:0; right:0;
+      background: #eee;
+      border-top: .1rem solid rgba(0, 0, 0,.1);
 
   }
-}    
-@media (max_width:768px){
+  header .navbar a{
+      margin:1.5rem;
+      padding:1.5rem;
+      background:#fff;
+      border:.1rem solid rgba(0, 0, 0,.1);
+      display: block;
 
-    header .fa-bars{
-        display:block;
-       }
-       header .navbar{
-        position:absolute;
-        top:100%; left:0; right:0;
-        background:#eee;
-        border-top:.1rem solid rgba(0, 0, 0, 0.1);
-        clip-path:polygon(0 0,100% 0, 100% 0,0 0);
-       }
-       header #toggler:checked ~ .navbar{
-        clip-path:  polygon(0 0 , 100% 0,100% 0, 0 0);
-       }
-       header .navbar a{
-        margin: 1.5rem;
-        padding: 1.5rem;
-        background: #fff;
-        border:.1rem solid rgba(0, 0, 0, 0.1);
-        display: block;
+  }
+}
 
-       }
-       .home .content h3{
-        font-size: 5rem;
-
-       }
-       home .content span{
-        font-size: 2.5rem;
-
-       }
-    }
-
-       @media (max_width:450px){
-        html{
-          font-size: 50%;
-
-        }
-        .heading{
-            font-size: 3rem;
-
-        }
-    }
+@media (max-width:450px){
+  html{
+    font-size: 50%;
+  }
+}
 
 
 
-/* footer */
+/* footer */ 
 
 footer{
 	position: fixed;
@@ -859,7 +850,103 @@ a{color:inherit;text-decoration:none}
 
 
 
-       /* contactus page */
+       /* product page */
+       .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 6% auto 0;
+        text-align: center;
+        }
+        .wrapper h1{
+          text-align: center;
+        }
+        .single-card {
+        position: relative;
+        width: 280px;
+        height: 400px;
+        margin: 15px;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.3s ease;
+        overflow: hidden;
+        background: #414852;
+        border-radius: 15px;
+        transition: all 0.8s ease-in-out;
+        }
+        .single-card:hover {
+        transform: translateY(-10px);
+        }
+        .img-area {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        }
+        .img-area img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        }
+        .img-area:hover img {
+        transform: scale(1.1);
+        }
+        .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 174, 255, 0.8);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        }
+        .single-card:hover .overlay {
+        opacity: 1;
+        }
+        .add-to-cart, .view-details {
+        background-color: #fff;
+        color: #333;
+        padding: 10px 15px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        margin-bottom: 10px;
+        }
+        .add-to-cart:hover, .view-details:hover {
+        background-color: orangered;
+        color: #fff;
+        border: none;
+        }
+        .info {
+        padding: 10px;
+        text-align: center;
+        color: #ddd;
+        }
+        .info h3 {
+        margin: 15px 0 10px;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue', sans-serif;
+        }
+        .info .price {
+        margin: 0;
+        font-size: 30px;
+        font-weight: bold;
+        color: aqua;
+        }
+        
+        
 
        
        
