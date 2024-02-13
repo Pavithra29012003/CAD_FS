@@ -1,112 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-
-	<title>login page</title>
-<link rel="icon" type="image\x-icon" href="data:image/png;base64,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">
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="model.js">
 </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="sty.css ">
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<link rel="stylesheet" type="text/css" href="style.css">
-
-</head>
-
-<header>
-  <input type="checkbox" name="" id="toggler">
-  <label for="toggler" class="fas fa-bars"></label>
-
-  <a href="#" class="logo" >Flower shop<span>.</span></a>
-  <nav class="navbar">
-      
-    <a href="home.html">Home</a>
-    <a href="aboutus.html">About Us</a>
-    <a href="product.html">product</a>
-    <a href="login.html">Login</a>
-    <a href="contact.htm">Contact</a>
-    <a href="#">Help</a>
-  </nav>
-  
-  
-    
-  <div class="icons">
-    <a href="#" class="fas fa-heart"></a>
-    <a href="#" class="fas fa-shopping-cart"></a>
-    <a href="#" class="fas fa-user"></a>
-    
-  </div>	
-</header>
-
-
-  <div class="login-wrap">
-    
-    
-    <div class="login-html">
-      <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
-      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
-      <div class="login-form">
-        <div class="sign-in-htm">
-          <div class="group">
-            <label for="user" class="label">Username</label>
-            <input id="user" type="text" class="input">
-          </div>
-          <div class="group">
-            <label for="pass" class="label">Password</label>
-            <input id="pass" type="password" class="input" data-type="password">
-          </div>
-          <div class="group">
-            <input id="check" type="checkbox" class="check" checked>
-            <label for="check"><span class="icon"></span> Keep me Signed in</label>
-          </div>
-          <div class="group">
-            <input type="submit" class="button" value="Sign In">
-          </div>
-          <div class="hr"></div>
-          <div class="foot-lnk">
-            <a href="#forgot">Forgot Password?</a>
-          </div>
+<body>
+    <div class="login-wrap">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+            <div class="login-form">
+                <div class="sign-in-htm">
+                    <div class="group">
+                        <label for="user" class="label">Username</label>
+                        <input id="user" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="pass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <input id="check" type="checkbox" class="check" checked>
+                        <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                    </div>
+                    <div class="group">
+                        <input type="submit" class="button" value="Sign In">
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <a href="#forgot">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="sign-up-htm">
+                    <div class="group">
+                        <label for="user" class="label">Username</label>
+                        <input id="user" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="pass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Repeat Password</label>
+                        <input id="pass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Email Address</label>
+                        <input id="pass" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <input type="submit" class="button" value="Sign Up">
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <label for="tab-1">Already Member?</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="sign-up-htm">
-          <div class="group">
-            <label for="user" class="label">Username</label>
-            <input id="user" type="text" class="input">
-          </div>
-          <div class="group">
-            <label for="pass" class="label">Password</label>
-            <input id="pass" type="password" class="input" data-type="password">
-          </div>
-          <div class="group">
-            <label for="pass" class="label">Repeat Password</label>
-            <input id="pass" type="password" class="input" data-type="password">
-          </div>
-          <div class="group">
-            <label for="pass" class="label">Email Address</label>
-            <input id="pass" type="text" class="input">
-          </div>
-          <div class="group">
-            <input type="submit" class="button" value="Sign Up">
-          </div>
-          <div class="hr"></div>
-          <div class="foot-lnk">
-            <label for="tab-1">Already Member?</a>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-
-
-
-
-
-  
-  </body>
-  </html>
+</body>
+</html>
