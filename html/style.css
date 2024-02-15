@@ -803,7 +803,7 @@ a{color:inherit;text-decoration:none}
 .container5{
     width: 100%;
     background-color:red;
-    height: 200px;
+    height: 150px;
 }
 .container1{
     display: flex;
@@ -813,11 +813,23 @@ a{color:inherit;text-decoration:none}
     width: 100%;
     background-color:white;
     height: 300px;
+    border: #1a1a1a;
+    
 }
  .container1 img{
-    width: 100%;
+    width: 80%;
     height: 80%;
+    border: #1a1a1a;
+    transition: transform 0.5s;
+	cursor: pointer;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    
 } 
+
+.conchild:hover img{
+	transform: scale(1.1);
+}
+
  
 .conchild{
     display: flex;
@@ -839,7 +851,17 @@ a{color:inherit;text-decoration:none}
   .conchild-icon{
     height: 50%;
     width: 50%;
-  }      
+  } 
+.birthday{
+    margin-top: 75px;
+}
+  .wedding{
+    margin-top: 50px;
+  }
+  .anniversary{
+    margin-top: 50px;
+
+  }
         
 
        
