@@ -513,7 +513,54 @@ h2{
   background: transparent;
   border:2px solid #969495;
   outline: none;
+  border-radius: 40px;
+  font-size: 1rem;
+  color: #f2f2f2;
+  padding: 0 20px 0 40px;
+  
 }
+
+.input-box .icon{
+  position: absolute;
+  left: 15px;
+  color: #333;
+  display:absolute;
+  font-size: 3.rem;
+  line-height:55px;
+}
+
+
+.forgot-password{
+  margin: .15px 0 15px 15px;
+
+}
+.forgot-password a{
+  color: #333;
+  font-size:1rem;
+  text-decoration: none;
+  text-decoration: underline;
+}
+.sign-link{
+  font-size: .9rem;
+  text-align: center;
+  margin: 25px 0;
+
+}
+.sign-link a{
+  color: blue;
+
+}
+
+.sign-link p a{
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.sign-link p a:hover{
+  text-decoration: underline;
+}
+
     
        /* product page */
        .wrapper {
@@ -615,9 +662,8 @@ h2{
 
         /* contact us page */
         .container2{
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
+         
+         
           position: relative;
           width: 100%;
           min-height: 100vh;
@@ -629,7 +675,7 @@ h2{
           justify-content:center ;
         }
  
-        .container2 .form{
+         .form{
           width: 100%;
           max-width: 820px;
           height: 500px;
@@ -638,19 +684,31 @@ h2{
           box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
           z-index: 1000;
           overflow: hidden;
-          display: grid;
+          display:grid;
           grid-template-columns: repeat(2 1fr);
 
         }
         .contact-info{
-          background-color:#333 ;
-        
+          display: grid;
+          background-color:green ;
+    
         }
 
         .contact-form{
+          background-color:red;  
+        }
+.contact-info1{
+  background-color:yellow;
+}
         
-          background-color:#1abc9c;
-          position: relative;
+        .circle{
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          background:blue;
+          position: absolute;
+
+
         }
 
 
