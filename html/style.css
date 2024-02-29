@@ -819,6 +819,94 @@ h2{
 
 
 
+  .registerbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: pink;
 
+}
+.regsiter{
+    width: 750px;
+    border-radius: 10px;
+    
+}
+.regsiter h1{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.regsiter .input-boxs{display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgb(149, 247, 149);
+    
+
+
+}
+.input-boxs .input-fields{
+    position: relative;
+    width:40%;
+    height: 70px;
+    
+    margin: 13px 0;
+
+
+}
+.input-boxs .input-fields input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .2);
+    outline: none;
+    font-size: 16px;
+    padding: 15px 15px 15px 40px;
+   
+    color: #333;
+    border-radius: 6px;
+
+
+}
+.input-boxs .input-fields input::placeholder{
+    color: #333;
+    
+}
+
+.input-boxs .input-fields i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(-50%);
+
+}
+.regsiter label{
+    font-size: 14.5px;
+    margin: 10px 0 23px;
+    display: inline-block;
+}
+
+.regsiter label input{
+    accent-color: #fff;
+    margin-right: 5px;
+
+}
+.regsiter .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,.1) ;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+
+    
+
+}
 
 
